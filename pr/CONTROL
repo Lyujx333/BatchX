@@ -1,0 +1,35 @@
+&allocations
+        nelements=3,
+        natoms=10,
+        ngrid(:)=9 9 9
+        norientations=3
+&end
+&crystal
+        lfactor=0.10,
+lattvec(:,1)=      7.8961762039004997    -0.0207871682040586    0.0000000104018569
+lattvec(:,2)=      0.3354458966759608    7.8890751548727058    0.0000000104014545
+lattvec(:,3)=      -4.1158113419908773    -3.9341442721487696    5.4710727050537438
+        elements="Cs" "Au" "Br"
+        types=1 1,2 2,3 3 3 3 3 3,
+
+
+	
+        scell(:)=2 2 2
+        orientations(:,1)=1 0 0,
+        orientations(:,2)=0 1 0,
+        orientations(:,3)=0 0 1
+&end
+&parameters
+      T_min=300
+      T_max=900
+      T_step=300
+   !   rmin=5
+   !   rmax=1000
+   !   dr=10
+        scalebroad=0.4
+&end
+&flags
+     !   nonanalytic=.TRUE.
+     !   nanowires=.TRUE.
+       convergence=.TRUE.
+&end

@@ -1,0 +1,27 @@
+ System = Graphene_Mn 
+ PREC=Accurate 
+ ISTART = 0
+ ICHARG=2  
+ ENCUT  = 500
+ ISMEAR=0
+ SIGMA=0.05 
+ #ISIF=2
+ #ISPIN=2 
+
+# ISYM=0   # 默认为2
+ NSW=0
+ IBRION=-1 
+ IVDW=12
+
+ NELM=100 
+ EDIFF=1E-08
+ EDIFFG=-0.001
+ NPAR=4
+ #ADDGRID=.TRUE.
+
+ LWAVE=.FALSE.
+ LCHARG=.FALSE.
+ LREAL = .FALSE.
+
+ IALGO=38
+
