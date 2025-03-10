@@ -23,5 +23,5 @@ The First Way to use it is (A example in Solution1 Directory)
     4. In the optimization and self-consistent period, the KPOINT Setting is performed with auccracy 0.2 Monkhorst-Pack Scheme through VASPKIT.
     5. SuperCell Rule based on reasonable empirical method, and it will show on the fileneme, like SIFC-222 TIFC-333.
   commands like:
-  nohup bash /home/user1/BatchProject1/BatchX1_template.sh > logfile.log 2>&1 & echo $!
-  bash BatchX1_template > logfile.log 2>&1 & echo $!
+    nohup bash /home/user1/BatchProject1/BatchX1_template.sh > logfile.log 2>&1 & echo $!
+    bash BatchX1_template > logfile.log 2>&1 & echo $!
