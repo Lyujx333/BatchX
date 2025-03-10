@@ -23,4 +23,3 @@ The First Way to use it is (A example in Solution1 Directory)
     4. In the optimization and self-consistent period, the KPOINT Setting is performed with auccracy 0.2 Monkhorst-Pack Scheme through VASPKIT.
     5. SuperCell Rule based on reasonable empirical method, and it will show on the fileneme, like SIFC-222 TIFC-333.
   commands on Solution1/readme_first
-1
