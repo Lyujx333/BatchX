@@ -1,7 +1,7 @@
 # BatchX
 This is a program that can perform automated batch calculations of thermal conductivity based on DFT(VASP).Based on programs such as VASP, VASPKIT, ShengBTE, Phonopy, and thirdorder. It only requires inputting an unoptimized initial structure(POSCAR) and a command, and it can automatically invoke the user's PBS cluster for computation.
 
-The First Way to use it is (A example in Solution1 Directory)
+The First Way to use it is 
   Configure/Complie
     1.Modify the vasp40.sh & TIFC.sh & SIFC.sh & sh40.sh (these are pbs run vasp scirpt) to the vasp complie environment fit for you.
     2.A easier way is Replace it with the scirpt that you are using, but make sure all the filename no difference!!!
@@ -22,4 +22,4 @@ The First Way to use it is (A example in Solution1 Directory)
     3. BatchX can automatically identify and classify the material as it is calculating.
     4. In the optimization and self-consistent period, the KPOINT Setting is performed with auccracy 0.2 Monkhorst-Pack Scheme through VASPKIT.
     5. SuperCell Rule based on reasonable empirical method, and it will show on the fileneme, like SIFC-222 TIFC-333.
-  commands on Solution1/readme_first
+  commands on the file "readme_first"
