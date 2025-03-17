@@ -2,7 +2,9 @@
 ```markdown
 # BatchX
 
-This is a program designed to perform automated batch calculations of thermal conductivity based on DFT (VASP) and BTE. It integrates tools such as VASP, VASPKIT, ShengBTE, Phonopy, and thirdorder. BatchX requires only an unoptimized initial structure (POSCAR) and a command to automatically invoke the user's PBS cluster for computation.
+This is a program designed to perform automated batch calculations of thermal conductivity based on DFT (VASP) and BTE.
+It integrates tools such as VASP, VASPKIT, ShengBTE, Phonopy, and thirdorder.
+BatchX requires only an unoptimized initial structure (POSCAR) and a command to automatically invoke the user's PBS cluster for computation.
 
 ---
 
