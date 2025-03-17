@@ -45,4 +45,3 @@ This is a program designed to perform automated batch calculations of thermal co
 
 ## Additional Commands
 Refer to the file `readme_first` for more command details.
-```
