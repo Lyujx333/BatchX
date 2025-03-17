@@ -1,4 +1,3 @@
-Here’s the complete Markdown text for your GitHub README:
 
 ```markdown
 # BatchX
