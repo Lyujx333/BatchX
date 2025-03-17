@@ -22,7 +22,7 @@ BatchX requires only an unoptimized initial structure (POSCAR) and a command to 
    bash BatchX1_template.sh > logfile.log 2>&1 & echo $!
    ```
    or
-   ```bash
+   ```nohup
    nohup bash BatchX1_template.sh > logfile.log 2>&1 & echo $!
    ```
    if not succeed, the problem may refer to the full "BatchX.sh" path used in nohup, try this one
