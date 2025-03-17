@@ -2,7 +2,7 @@
 ```markdown
 # BatchX
 
-This is a program designed to perform automated batch calculations of thermal conductivity based on DFT (VASP). It integrates tools such as VASP, VASPKIT, ShengBTE, Phonopy, and thirdorder. BatchX requires only an unoptimized initial structure (POSCAR) and a command to automatically invoke the user's PBS cluster for computation.
+This is a program designed to perform automated batch calculations of thermal conductivity based on DFT (VASP) and BTE. It integrates tools such as VASP, VASPKIT, ShengBTE, Phonopy, and thirdorder. BatchX requires only an unoptimized initial structure (POSCAR) and a command to automatically invoke the user's PBS cluster for computation.
 
 ---
 
@@ -16,12 +16,21 @@ This is a program designed to perform automated batch calculations of thermal co
 1. Place all raw structures requiring calculation into the `POSCARs` folder. (Name the POSCAR files in any way.)
 2. Run the program using `bash` or `nohup` (for automated background processing) with a command like:
    ```bash
-   bash BatchX1_template.sh
+   bash BatchX1_template.sh > logfile.log 2>&1 & echo $!
    ```
    or
    ```bash
-   nohup bash BatchX1_template.sh &
+   nohup bash BatchX1_template.sh > logfile.log 2>&1 & echo $!
    ```
+   if not succeed, the problem may refer to the full "BatchX.sh" path used in nohup, try this one
+   ```
+   nohup bash path/to/your/current/directory/BatchX1_template.sh > logfile.log 2>&1 & echo $!
+   ```
+   when you want to check/stop the task situation, use
+   ```
+   ps aux | grep {your username} 
+   ```
+   use kill + {pid} to terminate it.
 
 ### Configure/Compile Notes
 - Ensure the current Python environment supports `phonopy` and `thirdorder`.
