@@ -13,7 +13,7 @@ This is a program designed to perform automated batch calculations of thermal co
 2. **Alternative**: Replace these scripts with your own VASP scripts, ensuring the filenames remain identical.
 
 ### Usage
-1. Place all raw structures requiring calculation into the `POSCARs` folder. (No need to worry about naming the POSCAR files.)
+1. Place all raw structures requiring calculation into the `POSCARs` folder. (Name the POSCAR files in any way.)
 2. Run the program using `bash` or `nohup` (for automated background processing) with a command like:
    ```bash
    bash BatchX1_template.sh
