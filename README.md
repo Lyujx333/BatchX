@@ -1,25 +1,49 @@
-# BatchX
-This is a program that can perform automated batch calculations of thermal conductivity based on DFT(VASP).Based on programs such as VASP, VASPKIT, ShengBTE, Phonopy, and thirdorder. It only requires inputting an unoptimized initial structure(POSCAR) and a command, and it can automatically invoke the user's PBS cluster for computation.
+Here’s the complete Markdown text for your GitHub README:
 
-The First Way to use it is 
-  Configure/Complie
-    1.Modify the vasp40.sh & TIFC.sh & SIFC.sh & sh40.sh (these are pbs run vasp scirpt) to the vasp complie environment fit for you.
-    2.A easier way is Replace it with the scirpt that you are using, but make sure all the filename no difference!!!
-  Usage:
-    1.Place ALL the raw structure that needs to be calculated in the POSCARs folder.(You don't need to worry about naming the poscar file)
-    2.Use bash or nohup(automated background processing), command like "bash BatchX1_template.sh" & ""
-  Configure/Complie Attention Plzzz:
-    Make sure that the current python environment can run phonopy and thirdorder!!!
-    Make sure the vaspkit can be called directly in the current environment!!!
-    Edit the Config.sh according to the guide.
-    Then bash configure.sh.And you will get the BatchX1_template.sh which is suit for you.
-    Also you will get a "template" directory,you can copy this one for your every project every times. 
-    Run bash/nohup command in the directory BatchX1.sh exsited!
-  Usage Attention Plzzz:
-    1. Do not place POSCAR and POTCAR files in the pr folder.
-    2. All the material structures that need to be calculated are placed in POSCARs in the form of a file,
-    which does not need to be named, but does not have the same name.
-    3. BatchX can automatically identify and classify the material as it is calculating.
-    4. In the optimization and self-consistent period, the KPOINT Setting is performed with auccracy 0.2 Monkhorst-Pack Scheme through VASPKIT.
-    5. SuperCell Rule based on reasonable empirical method, and it will show on the fileneme, like SIFC-222 TIFC-333.
-  commands on the file "readme_first"
+```markdown
+# BatchX
+
+This is a program designed to perform automated batch calculations of thermal conductivity based on DFT (VASP). It integrates tools such as VASP, VASPKIT, ShengBTE, Phonopy, and thirdorder. BatchX requires only an unoptimized initial structure (POSCAR) and a command to automatically invoke the user's PBS cluster for computation.
+
+---
+
+## First Way to Use It
+
+### Configure/Compile
+1. **Modify the PBS Scripts**: Update `vasp40.sh`, `TIFC.sh`, `SIFC.sh`, and `sh40.sh` (these are PBS scripts to run VASP) to match your VASP compilation environment.
+2. **Alternative**: Replace these scripts with your own VASP scripts, ensuring the filenames remain identical.
+
+### Usage
+1. Place all raw structures requiring calculation into the `POSCARs` folder. (No need to worry about naming the POSCAR files.)
+2. Run the program using `bash` or `nohup` (for automated background processing) with a command like:
+   ```bash
+   bash BatchX1_template.sh
+   ```
+   or
+   ```bash
+   nohup bash BatchX1_template.sh &
+   ```
+
+### Configure/Compile Notes
+- Ensure the current Python environment supports `phonopy` and `thirdorder`.
+- Confirm that `vaspkit` can be called directly in the current environment.
+- Edit `Config.sh` according to the provided guide.
+- Run:
+   ```bash
+   bash configure.sh
+   ```
+  This generates `BatchX1_template.sh` tailored to your setup, along with a `template` directory. You can copy this directory for each project.
+- Execute the `bash` or `nohup` command in the directory where `BatchX1.sh` exists.
+
+### Usage Notes
+1. Do **not** place `POSCAR` or `POTCAR` files in the `pr` folder.
+2. All material structures to be calculated must be placed in the `POSCARs` folder as individual files. Naming is not required, but avoid duplicate names.
+3. BatchX automatically identifies and classifies materials during calculation.
+4. During optimization and self-consistent calculations, K-point settings use a `0.2` accuracy Monkhorst-Pack scheme via VASPKIT.
+5. Supercell rules follow a reasonable empirical method, reflected in filenames (e.g., `SIFC-222`, `TIFC-333`).
+
+---
+
+## Additional Commands
+Refer to the file `readme_first` for more command details.
+```
