@@ -18,7 +18,7 @@ BatchX requires only an unoptimized initial structure (POSCAR) and a command to 
 1. Place all raw structures requiring calculation into the `POSCARs` folder. (Name the POSCAR files in any way.)
 2. Run the program using `bash` or `nohup` (for automated background processing) with a command like:
 
-   ```bash
+   ```
    bash BatchX1_template.sh > logfile.log 2>&1 & echo $!
    ```
    or
