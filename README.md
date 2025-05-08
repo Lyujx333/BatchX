@@ -56,3 +56,11 @@ BatchX requires only an unoptimized initial structure (POSCAR) and a command to 
 
 ## Additional Commands
 Refer to the file `readme_first` for more command details.
+
+## What's more
+This is a automatic-workflow script for solving BTE of structures in a such specific/classic way which illustrated above, 
+and it may only suit for the user equipped with HPC using Protable Batch System (PBS) as yet!
+I would be really excited if you used this program in your research, and PLEASE CITE `https://github.com/Lyujx333/BatchX`!
+Acknowledge the support from Innovation and Entrepreneurship Training Project of Central South University (No.X202410533601).
+If you have any questions or Constructive ideas, feel free to CONTACT ME `ljx331@gmail.com`!
+Thank you.
