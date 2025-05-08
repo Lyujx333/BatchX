@@ -1,5 +1,5 @@
 
-```markdown
+
 # BatchX
 
 This is a program designed to perform automated batch calculations of thermal conductivity based on DFT (VASP) and BTE.
@@ -8,7 +8,7 @@ BatchX requires only an unoptimized initial structure (POSCAR) and a command to 
 
 ---
 
-## First Way to Use It
+## A Way to Use It
 
 ### Configure/Compile
 1. **Modify the PBS Scripts**: Update `vasp40.sh`, `TIFC.sh`, `SIFC.sh`, and `sh40.sh` (these are PBS scripts to run VASP) to match your VASP compilation environment.
@@ -58,9 +58,9 @@ BatchX requires only an unoptimized initial structure (POSCAR) and a command to 
 Refer to the file `readme_first` for more command details.
 
 ## What's more
-This is a automatic-workflow script for solving BTE of structures in a such specific/classic way which illustrated above, 
+1. This is a automatic-workflow script for solving BTE of structures in a such specific/classic way which illustrated above, 
 and it may only suit for the user equipped with HPC using Protable Batch System (PBS) as yet!
-I would be really excited if you used this program in your research, and PLEASE CITE `https://github.com/Lyujx333/BatchX`!
-Acknowledge the support from Innovation and Entrepreneurship Training Project of Central South University (No.X202410533601).
-If you have any questions or Constructive ideas, feel free to CONTACT ME `ljx331@gmail.com`!
+1. I would be really excited if you used this program in your research, and PLEASE CITE `https://github.com/Lyujx333/BatchX`!
+1. Acknowledge the support from Innovation and Entrepreneurship Training Project of Central South University (No.X202410533601).
+1. If you have any questions or constructive ideas, feel free to CONTACT ME `ljx331@gmail.com`!
 Thank you.
